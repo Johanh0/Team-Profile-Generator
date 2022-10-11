@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johanh0/Team-Profile-Generator.git"
+  },
+  "author": "Johan Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johanh0/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Johanh0/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
