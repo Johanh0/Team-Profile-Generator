@@ -5,7 +5,7 @@ function jsGenerator(employees) {
     const main = document.querySelector("main");
     
     const myObj = ${employees};
-    const employees = JSON.parse(myObj);
+    const employees = Array.from(myObj);
     
     
     // 
@@ -44,8 +44,12 @@ function jsGenerator(employees) {
             aGit.appendChild(iconGit);
     
             // Information
-            h2El.innerText = employees[i].nameUser + employees[i].lastName;
+            h2El.innerText = employees[i].nameUser +  " " + employees[i].lastName;
             pEl.innerText = employees[i].role;
+
+            aEmail.href = "mailto:" + employees[i].email;
+            aGit.href = "https://www.github.com/"+ employees[i].github + "";
+            aGit.target = "_blank"
     
     
     
@@ -54,7 +58,9 @@ function jsGenerator(employees) {
                 return response.json();
              }).then( (data) => {
                 spanImg.style.backgroundImage = "url("+ data.avatar_url + ")";
-        })
+            })
+            
+            i++;
         }
     };
     

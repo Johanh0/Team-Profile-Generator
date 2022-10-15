@@ -2,8 +2,8 @@
     // CONST
     const main = document.querySelector("main");
     
-    const employees = [{nameUser:"a",LastName:"a",email:"a",github:"a"}];
-    // const employees = JSON.parse(myObj);
+    const myObj = [{"nameUser":"Johan","lastName":"Herrera","role":"Front End Developer","email":"j","github":"johanh0"},{"nameUser":"Alexander","lastName":"Havers","role":"Full Stack Developer","email":"a","github":"pseudoDjnn"},{"nameUser":"Gabriella","lastName":"Pinto","role":"Front End Developer","email":"a","github":"gabriellapinto"},{"nameUser":"Michelle","lastName":"Anderson","role":"UX Design","email":"a","github":"Anngoodness"}];
+    const employees = Array.from(myObj);
     
     
     // 
@@ -42,8 +42,12 @@
             aGit.appendChild(iconGit);
     
             // Information
-            h2El.innerText = employees[i].nameUser + employees[i].lastName;
+            h2El.innerText = employees[i].nameUser +  " " + employees[i].lastName;
             pEl.innerText = employees[i].role;
+
+            aEmail.href = "mailto:" + employees[i].email;
+            aGit.href = "https://www.github.com/"+ employees[i].github + "";
+            aGit.target = "_blank"
     
     
     
@@ -52,7 +56,7 @@
                 return response.json();
              }).then( (data) => {
                 spanImg.style.backgroundImage = "url("+ data.avatar_url + ")";
-        })
+            })
         }
     };
     

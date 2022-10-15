@@ -5,14 +5,12 @@ const htmlGenerator = require(`./src/js/htmlG`);
 const cssGenerator = require(`./src/js/cssG`);
 const jsGenerator = require(`./src/js/jsG`);
 
-// API JS Generator
-// const filesG = require(`./src/js/filesG`);
-
 
 // Obj Constructor
-function Employee(nameUser, lastName, email, github) {
+function Employee(nameUser, lastName, role, email, github) {
     this.nameUser = nameUser,
-    this.LastName = lastName,
+    this.lastName = lastName,
+    this.role = role,
     this.email = email,
     this.github = github
 };
@@ -125,10 +123,10 @@ function userData() {
             //     if(err) throw err;
             //  })
             
-            //  // Creating the JS
-            //  fs.writeFile(`./dist/script.js`, jsGenerator(JSON.parse(employees)), err => {
-            //     if(err) throw err;
-            //  })
+             // Creating the JS
+             fs.writeFile(`./dist/script.js`, jsGenerator(JSON.stringify(employees)), err => {
+                if(err) throw err;
+             })
             
              console.log(employees);
          }
