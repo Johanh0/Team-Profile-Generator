@@ -20,22 +20,7 @@ function htmlGenerator() {
     </header>
 
     <main>
-        <!-- <div class="card">
-            <div class="blob"></div>
-              <span class="img"></span>
-              <h2>Johan Herrera</h2>
-              <p>
-                CEO
-              </p>
-              <div class="icons">
-                <a href="mailto:johanherrera20000@gmail.com">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </div>
-            </div> -->  
+ 
     </main>
 
     <script src="./script.js"></script>
