@@ -80,7 +80,7 @@ main {
    
    .card:hover .img {
     width: 100%;
-    height: 65%;
+    height: 60%;
     border-radius: 10px 0 0;
     margin: 0 auto;
     z-index: 99999;
