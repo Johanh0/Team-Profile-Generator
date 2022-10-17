@@ -118,7 +118,7 @@ function userData() {
 
             employees.push(newIntern);
 
-        };
+        }
 
      
          if(data.runAgain === `Yes`) {
