@@ -8,7 +8,10 @@
     
     // 
     function createCard(){
-        for(let i = 0; i <= employees.length; i++) {
+
+        let i = 0
+
+        while(i < employees.length) {
             // Create Elements
             const cardDiv = document.createElement("div");
             const blobDiv = document.createElement("div");
@@ -90,6 +93,8 @@
 
                 idP.innerText = "ID: " + data.id;
             })
+
+            i++;
         }
     };
     
