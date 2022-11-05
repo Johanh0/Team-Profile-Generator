@@ -2,7 +2,7 @@
     // CONST
     const main = document.querySelector("main");
     
-    const myObj = [{"name":"Johan Herrera","role":"Engineer","email":"johanherrera20000@gmail.com","github":"Johanh0"}];
+    const myObj = [{"name":"Johan Herrera","role":"Engineer","email":"johanherrera20000@gmail.com","github":"Johanh0"},{"name":"Alexander Havers","role":"Manager","email":"example@gmail.com","github":"pseudoDjnn","officeNumber":"5"},{"name":"Gabriella Pinto","role":"Intern","email":"example@gmail.com","github":"gabriellapinto","school":"UNC"},{"name":"Ella Rekow","role":"Engineer","email":"example@gmail.com","github":"ellarekow"}];
     const employees = Array.from(myObj);
     
     
